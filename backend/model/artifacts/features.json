@@ -1,0 +1,29 @@
+{
+  "features": [
+    "rain_24h",
+    "rain_72h",
+    "river_level_ratio",
+    "reservoir_pct",
+    "soil_saturation",
+    "elevation",
+    "drainage_density",
+    "antecedent_rain_7d",
+    "distance_to_river",
+    "urban_fraction",
+    "slope"
+  ],
+  "weights": {
+    "rain_24h": 0.2533,
+    "rain_72h": 0.2448,
+    "river_level_ratio": 0.2159,
+    "reservoir_pct": 0.15,
+    "soil_saturation": 0.0442,
+    "elevation": 0.0221,
+    "drainage_density": 0.0187,
+    "antecedent_rain_7d": 0.017,
+    "distance_to_river": 0.0153,
+    "urban_fraction": 0.0111,
+    "slope": 0.0077
+  },
+  "ensemble_accuracy": 0.9041666666666667
+}

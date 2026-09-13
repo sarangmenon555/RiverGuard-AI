@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #050b16;
+  color: #e2f4f1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a1428;
+}
+::-webkit-scrollbar-thumb {
+  background: #14b8a6;
+  border-radius: 6px;
+}
+
+.glass-panel {
+  background: linear-gradient(145deg, rgba(15, 30, 58, 0.82), rgba(10, 20, 40, 0.92));
+  border: 1px solid rgba(45, 212, 191, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+/* Accessibility: consistent, visible focus states for every native
+   focusable element and interactive SVG map districts. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible,
+path:focus-visible {
+  outline: 2px solid #5eead4;
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Accessibility: respect the operating system's reduced-motion
+   preference as a site-wide safety net, in addition to the
+   component-level checks already in place for the rain hero,
+   map emergence, map zoom, and scroll-reveal chapters. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
